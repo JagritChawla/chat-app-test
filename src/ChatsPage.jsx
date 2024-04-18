@@ -1,5 +1,5 @@
 // import { MultiChatWindow,MultiChatSocket, useMultiChatLogic } from 'react-chat-engine-advanced';
-// import { PrettyChatWindow} from 'react-chat-engine-pretty'
+import { PrettyChatWindow} from 'react-chat-engine-pretty'
 
 export const ChatsPage = ({ user }) => {
     const projectId = import.meta.env.VITE_PROJECT_ID;
@@ -13,14 +13,13 @@ export const ChatsPage = ({ user }) => {
     
     return (
         <div style={{ height: '100vh' }}>
-            {/* <PrettyChatWindow 
+            <PrettyChatWindow 
                 projectId={projectId}
                 username={user.username}
                 secret={user.secret}
                 style={{height: '100%'}}
-            /> */}
-            <h1>{projectId}</h1>
-            <p>this is for chat page</p>
+            />
+            
             {/* <MultiChatSocket {...chatProps} />
             <MultiChatWindow  {...chatProps} style={{ height: '100vh' }}/> */}
         </div>
